@@ -1,0 +1,653 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Yeseva+One&display=swap');
+:root{
+    --prim-light: #F1E6E6;
+    --secondary-light: #CDD795;
+    --sec-hover: #A0AC5B;
+    --border: #383838;
+    --text:#1E1E1E;
+    --prim:#F1C8DB;
+    --bg-text:#FFFFFF;
+    --prim-main:#EEDDDD;
+}
+@media (max-width: 768px) {
+    section {
+      flex-direction: column;
+    }
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Yeseva One", serif;
+}
+body{
+    background-color: var(--prim-light);
+    color: #1E1E1E;
+    
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    background-color: var(--bg-text);
+}
+p{
+    font-family: "Marcellus", serif;
+    font-size: 1rem;
+}
+button{
+    font-family: "Yeseva One", serif;
+    transition: background-color 0.3s;
+    background-color: var(--secondary-light);
+    border: 2px solid var(--border);
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: var(--text);
+    text-decoration: none;
+}
+button:hover{
+    background-color: var(--sec-hover);
+}
+.logo img{
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+    border-radius: 100%;
+}
+.logo-container {
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.nav-bar ul{
+    list-style-type: none; 
+    display: flex;
+    gap: 10px;
+}
+.nav-bar li{
+    margin: 0;
+    
+}
+.nav-bar a{
+    font-family: "Yeseva One", serif;
+    color: var(--text);
+    display:inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-left: 10px;
+    border: 2px solid var(--border);
+    background-color: var(--secondary-light);
+    transition: background-color 0.3s;
+}
+.nav-bar a:hover {
+    background-color: var(--sec-hover);
+  }
+.hero{
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-image: url("../img/home\ bg\ pic1.jpeg"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-left: 150px;
+    padding-bottom: 30px;
+}
+.hero-text{
+    padding-right: 100px;
+    max-width: 650px;
+}
+.hero h1{
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+.hero p{
+    max-width: 600px;
+    margin: 0 auto 20px;
+    line-height: 1.6;
+}
+.hero img{
+    margin-top: 30px;
+    max-width: 600px;
+    border-radius: 20px;
+}
+
+.Populaire-bloem {
+    background-color: var(--prim-main);
+    padding: 30px;
+}
+.bloem-producten {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product {
+    border: 2px solid var(--border);
+    border-radius: 25px;
+    overflow: hidden;
+    background: white;
+    margin: 0;
+    padding:10px;
+    transition: transform 0.5s;
+}
+.product :hover{
+    transform: translateY(-5px);
+}
+.product img {
+    width: 350px;
+    height: 350px;
+    border-radius: 25px;
+}
+.fig-prod h3 {
+    font-size: 1.5rem;
+}
+
+.fig-prod p {
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family: "Yeseva One", serif;
+}
+#waarom-website {
+    background-color: var(--prim);
+    padding: 60px;
+    text-align: center;
+}
+#waarom-website h1 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+    padding-bottom: 25px;
+}
+.waarom {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+#waarom-website img {
+    width: 100%;
+    height: 550px;;
+    border-radius: 20px;
+}
+.text-waarom {
+    background-color: var(--bg-text);
+    border-radius: 15px;
+    padding: 20px;
+    line-height: 1.5;
+    border: 2px solid var(--border);
+}
+.footer-border{
+    margin: 30px;
+    border: 2px solid var(--border);
+}
+.footer-logo{ 
+    padding-top: 10px;
+    padding-left: 655px;
+    padding-bottom: 5px;
+    height: 150px;
+    width: auto;
+}
+.branding{
+    font-family: "Yeseva One", serif;
+    justify-content: center;
+    display: flex;
+    padding-bottom: 5px;
+}
+.links ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 20px;
+    list-style-type: none;
+    font-size: 1.3rem;
+}
+.links a{
+    text-decoration: none;
+}
+.page1-bg{ 
+    width:100%;
+    height: 425px;
+    object-fit: cover;
+}
+.product-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: var(--prim);
+    align-items: start;
+}
+.product-card {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: var(--bg-text);
+    border: 2px solid var(--border);
+    border-radius: 15px;
+}
+  
+  .product-info {
+    width: 60%;
+}
+.p1-sec2{
+    padding-left: 20px;
+    
+}
+.shop-info {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid var(--border);
+    background-image: url("../img/page1\ bg\ pic.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.shop-image{
+    width: 250px;
+    height: auto;
+    border-radius: 15px;
+}
+.product-image {
+    width: 300px;
+    height: auto;
+    border-radius: 15px;
+}
+h2, h3 {
+    margin-bottom: 10px;
+}
+.price {
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family: "Yeseva One", serif;
+}
+.rating {
+    margin-top: 10px;
+}
+.star-rating {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+    font-size: 2rem;  
+}
+  
+.star-empty {
+    color: #ddd; 
+}
+  
+.star-filled {
+    color: #ffd700; 
+}
+.page5-text {
+    padding: 20px;
+    background-color: var(--bg-text);
+    border: 2px solid var(--border);
+    border-radius: 15px;
+    margin: 0px 400px 20px 125px;
+}
+.bloem-kaart{
+    background-image: url("../img/page4\ bg.jpeg"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+.page5-text h1{
+    display: block;
+    margin-left: 0;
+}
+iframe {
+    display: flex;
+    align-items: center;
+    width: 85%;
+    height: 700px; 
+    border: 2px solid var(--border);
+    margin: 0px 20px 30px 115px;
+    border-radius: 25px;
+}
+.contactp {
+    background-image: url("../img/contact\ page\ bg.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0px;
+    padding: 25px 100px 60px 100px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    gap: 230px;
+}
+.contact-text {
+    background-color: var(--bg-text);
+    border-radius: 15px;
+    border: 1px;
+    height: 725px;
+    padding: 20px;
+}
+.contact-text h1 {
+    font-weight: bold;
+    margin: 0 0 10px;
+    display: block;
+    margin-left: 45px;
+    margin-top: 10px;
+}
+.contact-text p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin: 20px 50px 20px 50px;
+}
+.contact-text img {
+    height: 420px;
+    border-radius: 10px;
+    margin-left: 45px;
+    margin-bottom: 20px;
+}
+.contactp legend{
+    font-size: 1.5rem;
+}
+fieldset{
+    border: 2px solid var(--border);
+    padding: 20px;
+}
+.contactp form {
+    background-color: var(--prim);
+    border-radius: 15px;
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-right: 150px;
+}
+.contactp label {
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 10px;
+}
+.contactp input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    border: 2px solid var(--border);
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+.contactp input[type="radio"] {
+    margin-bottom: 20px;
+}
+.radio-group {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.radio-group label {
+    font-size: 1rem;
+    color: var(--border);
+    margin-bottom: 22px;
+    margin-right: 15px;
+}
+.submit {
+    transition: background-color 0.3s;
+    background-color: var(--secondary-light);
+    border: 2px solid var(--border);
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 200px;
+    margin-left: 45px;
+}
+.submit :hover {
+    background-color: var(--sec-hover);
+}
+.contactp-yes{
+    background-image: url("../img/contact\ page\ bg.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 100px;
+}
+.reviews {
+    background-image: url("../img/home\ bg\ pic2.jpeg"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+.reviews h1 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+.review {
+    background-color: var(--bg-text);
+    border-radius: 30px;
+    padding: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.single-review {
+    display: flex;
+    flex-direction: column;
+}
+.user-and-star {
+    display: block;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.user-and-star img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+.user-and-star h2 {
+    font-size: 1.2rem;
+    margin-left: 5px;
+    margin-bottom: -20px;
+}
+.user-and-star li{
+    margin: 0;
+}
+.review p {
+    margin: 0;
+    line-height: 1.5;
+}
+.p2-bg{
+    background-image: url("../img/page2\ bg.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.p2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    flex-wrap: wrap;
+    gap: 70px;
+}
+.p2 figure {
+    max-width: 45%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.p2 figure img {
+    width: 550px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.p2-star-and-name {
+    max-width: 45%;
+    padding: 15px;
+    border: 2px solid var(--border);
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: var(--bg-text);
+}
+.p2-star-and-name h1 {
+    margin-bottom: 10px;
+}
+
+.b-price {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.p2-description {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+.p2-button {
+    display: inline-block;
+}
+.aside-text {
+    max-width: 35%;
+    padding: 15px;
+    border: 2px solid var(--border);
+    border-radius: 10px;
+    background-color: var(--bg-text);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    height: 300px;
+    margin-top: -140px;
+    margin-left: -125px;
+}
+.aside-text h1 {
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+}
+.aside-text li {
+    list-style: disc inside;
+    line-height: 1.6;
+    font-family: "Marcellus", serif;
+}
+figure.store {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.p2-store {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    display: block;
+    margin-top: -50px;
+}
+.store-text {
+    padding: 20px 30px 20px 30px;
+    border: 2px solid var(--border);
+    border-radius: 10px;
+    background-color: var(--bg-text);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: block;
+}
+.store-text h1 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+.store-text p {
+    font-size: 1rem;
+}
+.p2-reviews {
+    background-color: var(--prim);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+.winkel-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 150px;
+}
+.winkel-logo{
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    margin: 0;
+    padding: 0;
+}
+.p3-map-text {
+    text-align: center;
+    padding: 15px;
+    border: 2px solid var(--border);
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: var(--bg-text);
+}
+.aside-info {
+    max-width: 35%;
+    padding: 15px;
+    border: 2px solid var(--border);
+    border-radius: 10px;
+    background-color: var(--bg-text);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    height: 300px;
+}
+.p3-star-and-name{
+    padding-left: 80px;
+    padding-right: 80px;
+    border: 2px solid var(--border);
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: var(--bg-text);
+}
+.aside-info p{
+    padding: 20px;;
+}
+.cookies-bericht{
+    padding: 15px; 
+    background-color: var(--bg-text); 
+    position: fixed; 
+    bottom: 0; 
+    width: 100%; 
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2); 
+    font-size: 1.2rem;
+    float: left;
+    z-index: 9999;
+}
+.cookies-bericht p:nth-child(1) {
+    background-color: var(--prim-main)
+  }
+  
