@@ -1,0 +1,13 @@
+Student name: Zandorah Brandon
+Student number: 724258
+Student class: HAINF24VT1A
+GitHub Repository: https://github.com/Brandon449-egg/webmarkup-master
+GitHub Pages URL: 
+- https://github.com/Brandon449-egg/webmarkup-master/blob/main/Index.html
+- https://github.com/Brandon449-egg/webmarkup-master/blob/main/AlleProducten.html
+- https://github.com/Brandon449-egg/webmarkup-master/blob/main/BloemistenKaart.html
+- https://github.com/Brandon449-egg/webmarkup-master/blob/main/ContactPage%20na%20submit.html
+- https://github.com/Brandon449-egg/webmarkup-master/blob/main/ContactPage.html
+- https://github.com/Brandon449-egg/webmarkup-master/blob/main/bloem.html
+- https://github.com/Brandon449-egg/webmarkup-master/blob/main/student.txt
+- https://github.com/Brandon449-egg/webmarkup-master/blob/main/winkel.html

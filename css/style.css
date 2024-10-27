@@ -125,6 +125,10 @@ button:hover{
     justify-content: center;
     align-items: center;
     gap: 50px;
+    transition: transform 0.5s;
+}
+.bloem-producten :hover{
+    transform: translateY(-5px);
 }
 h1 {
     font-size: 2rem;
@@ -140,10 +144,6 @@ h1 {
     background: white;
     margin: 0;
     padding:10px;
-    transition: transform 0.5s;
-}
-.product :hover{
-    transform: translateY(-5px);
 }
 .product img {
     width: 350px;
