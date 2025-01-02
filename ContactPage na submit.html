@@ -6,14 +6,20 @@
     <meta name="keywords" content="Bloemen zoeken, Lokale bloemisten, Bloemenwinkel in de buurt, Zeldzame bloemen vinden, Bloemen beschikbaarheid">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Zandorah Brandon">
-    <title>Webmarkup Assignment</title>
+    <title>Petal Scout</title>
+    <link rel="icon" type="img/jpeg" href="img/logo.jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Yeseva+One&display=swap" rel="stylesheet">
     <link rel ="stylesheet" type="text/css" href="./css/style.css"/>
 </head>
 <body>
     <header class="header">
         <figure class="logo-container">
             <a class="logo" href="Index.html"><img src="img/logo.jpeg" alt="Petal Scout Logo" title="logo"/></a>
-            <figcaption>Petal Scout</figcaption>
+            <aside>
+                <figcaption>Petal Scout</figcaption>
+            </aside>
         </figure>
         <nav class="nav-bar">
             <ul>   
@@ -28,18 +34,49 @@
         <h1>
             Bedankt dat u contact heeft opgenomen!
         </h1>
-        <p>
+        <p class="pp">
             Uw bericht is succesvol verzonden. We zullen uw vraag beoordelen en zo snel mogelijk contact met u opnemen met de informatie of ondersteuning waar u om heeft gevraagd.
         </p>
-        <button class="cta-button"><a href="ContactPage.html">Naar de winkel Website</a></button>
-        <button class="cta-button"><a href="Index.html">Naar de winkel Website</a></button>
+        <p id="mobiel">
+            Content voor mobiel.
+        </p>
+        <p id="PC">
+            Content voor PC.
+        </p>
+        <h2>Uw Contactgegevens</h2>
+        <table class="contact-table">
+            <thead>
+                <tr>
+                    <th>Naam</th>
+                    <th>Email</th>
+                    <th>telefoonnummer</th>
+                    <th>Vraag/Verzoek</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Sander van Woest</td>
+                    <td>jouw@email.com</td>
+                    <td>+31 12345678</td>
+                    <td>Vraag over rozen</td>
+                </tr>
+                <tr>
+                    <td>Sander van Woest</td>
+                    <td>jouw@email.com</td>
+                    <td>+31 12345678</td>
+                    <td>Vraag over Baby's Breath</td>
+                </tr>
+            </tbody>
+        </table>
+        <button class="cta-button"><a href="ContactPage.html">Terug naar Contact Pagina</a></button>
+        <button class="cta-button"><a href="Index.html">Terug naar Home</a></button>
     </section>
     <footer>
         <section class="footer-border">
-            <img class="footer-logo" src="img/logo.jpeg" alt="" title=""/>
-        <section class="branding">
+            <img class="footer-logo" src="img/logo.jpeg" alt="Petal Scout Logo" title="logo"/>
+        <article class="branding">
             <p><em><strong>&copy; 2024 Petal Scout</strong></em></p>
-        </section>
+        </article>
         <section class="links">
             <ul>
                 <li>Over Ons</li>

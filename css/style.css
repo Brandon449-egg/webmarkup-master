@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Yeseva+One&display=swap');
+/* color variables */
 :root{
     --prim-light: #F1E6E6;
     --secondary-light: #CDD795;
@@ -14,6 +14,19 @@
       flex-direction: column;
     }
 }
+#mobiel , #PC{
+    display: none;
+}
+@media (max-width: 768px) {
+    #mobiel {
+      display: block;
+    }
+}
+@media (min-width: 768px) {
+    #PC {
+        display: block;
+    }
+}
 *{
     box-sizing: border-box;
     margin: 0;
@@ -22,8 +35,16 @@
 }
 body{
     background-color: var(--prim-light);
-    color: #1E1E1E;
-    
+    color: var(--text);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-indent: 0;
+}
+a{
+    font-family: "Yeseva One", serif;
+    cursor: pointer;
+    color: var(--text);
+    text-decoration: none;
 }
 header{
     display: flex;
@@ -38,8 +59,8 @@ p{
 }
 button{
     font-family: "Yeseva One", serif;
-    transition: background-color 0.3s;
     background-color: var(--secondary-light);
+    transition: background-color 0.3s;
     border: 2px solid var(--border);
     padding: 10px 20px;
     border-radius: 5px;
@@ -79,13 +100,21 @@ button:hover{
     padding: 10px 20px;
     border-radius: 5px;
     margin-left: 10px;
-    border: 2px solid var(--border);
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--border);
     background-color: var(--secondary-light);
     transition: background-color 0.3s;
 }
 .nav-bar a:hover {
     background-color: var(--sec-hover);
-  }
+}
+.nav-bar a:active {
+    background-color: var(--border);
+}
+.logo-container{
+    text-transform: uppercase;
+}
 .hero{
     display: flex;
     align-items: center;
@@ -141,7 +170,7 @@ h1 {
     border: 2px solid var(--border);
     border-radius: 25px;
     overflow: hidden;
-    background: white;
+    background: var(--bg-text);
     margin: 0;
     padding:10px;
 }
@@ -160,7 +189,6 @@ h1 {
     font-family: "Yeseva One", serif;
 }
 #waarom-website {
-    background-color: var(--prim);
     padding: 60px;
     text-align: center;
 }
@@ -376,7 +404,7 @@ fieldset{
     width: 90%;
     max-width: 400px;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px var(--text);
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -433,6 +461,33 @@ textarea {
     background-position: center;
     padding: 100px;
 }
+.contactp-yes > p{
+    background-color: var(--prim-light);
+}
+.pp::first-letter{
+    color: var(--sec-hover);
+}
+.contactp-yes h2{
+    padding-top: 20px;
+}
+.contact-table {
+    width: 100%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    text-align: left;
+    border-radius: 10px;
+  }
+  .contact-table th, 
+  .contact-table td {
+    padding: 10px 15px;
+    border: 1px solid var(--border);
+  }
+  .contact-table tr:nth-child(even) {
+    background-color: #CFF;
+  }
+  .contact-table tr:nth-child(odd) {
+    background-color: #FFF;
+  }
 .reviews {
     background-image: url("../img/home\ bg\ pic2.jpeg"); 
     background-size: cover;
@@ -454,7 +509,7 @@ textarea {
     padding: 20px;
     margin-left: 50px;
     margin-right: 50px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px var(--text);
 }
 .single-review {
     display: flex;
@@ -519,7 +574,7 @@ textarea {
     padding: 15px;
     border: 2px solid var(--border);
     border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 8px var(--text);
     background-color: var(--bg-text);
 }
 .p2-star-and-name h1 {
@@ -544,7 +599,7 @@ textarea {
     border: 2px solid var(--border);
     border-radius: 10px;
     background-color: var(--bg-text);
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 8px var(--text);
     height: 300px;
     margin-top: -140px;
     margin-left: -125px;
@@ -561,7 +616,7 @@ textarea {
 figure.store {
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px var(--text);
 }
 .p2-store {
     display: flex;
@@ -575,7 +630,7 @@ figure.store {
     border: 2px solid var(--border);
     border-radius: 10px;
     background-color: var(--bg-text);
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 8px var(--text);
     display: block;
 }
 .store-text h1 {
@@ -613,7 +668,7 @@ figure.store {
     padding: 15px;
     border: 2px solid var(--border);
     border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 8px var(--text);
     background-color: var(--bg-text);
 }
 .aside-info {
@@ -622,7 +677,7 @@ figure.store {
     border: 2px solid var(--border);
     border-radius: 10px;
     background-color: var(--bg-text);
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 8px var(--text);
     height: 300px;
 }
 .p3-star-and-name{
@@ -630,7 +685,7 @@ figure.store {
     padding-right: 80px;
     border: 2px solid var(--border);
     border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 8px var(--text);
     background-color: var(--bg-text);
 }
 .aside-info p{
@@ -642,12 +697,12 @@ figure.store {
     position: fixed; 
     bottom: 0; 
     width: 100%; 
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0px 4px 8px var(--text);
     font-size: 1.2rem;
     float: left;
     z-index: 9999;
 }
 .cookies-bericht p:nth-child(1) {
     background-color: var(--prim-main)
-  }
+}
   
